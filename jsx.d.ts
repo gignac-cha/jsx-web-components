@@ -12,5 +12,5 @@ declare namespace JSX {
 
   type Fragment = 'jsxFragment';
   type Properties = Record<string, PropertyValue>;
-  type Element = (properties: Properties) => unknown;
+  type Element = Node & ((properties: Properties) => unknown);
 }
